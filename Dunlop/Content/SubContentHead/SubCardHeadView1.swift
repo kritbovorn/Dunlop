@@ -10,6 +10,8 @@ import SwiftUI
 
 struct SubCardHeadView1: View {
     
+    @Binding var isHiddenA: Bool
+    
     var contentResize: CGFloat
     var imageName: String
     
@@ -36,18 +38,21 @@ struct SubCardHeadView1: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: image.size.width * 0.95, height: image.size.height * 0.8)
                         }
-                        .frame(height: geo.size.height * 0.88)
+                        .frame(height: self.isHiddenA ? geo.size.height * 1 : geo.size.height * 0.88)
                         
                         GeometryReader { pageControl in
                             
                             VStack(spacing: 0) {
                                 
-                                Text("Boie")
-                                
+                                Text(self.isHiddenA ? "" : "Boie")
+
+
                                 Spacer()
+                                
+                                EmptyView()
                             }
                         }
-                        .frame(height: geo.size.height * 0.12)
+                        .frame(height: self.isHiddenA ? 0 : geo.size.height * 0.12)
                         //.background(Color.gray)
                         
                         Spacer()
@@ -66,6 +71,6 @@ struct SubCardHeadView1: View {
 
 struct SubHeadView1_Previews: PreviewProvider {
     static var previews: some View {
-        SubCardHeadView1(contentResize: 0.3, imageName: "present")
+        SubCardHeadView1(isHiddenA: .constant(true), contentResize: 0.3, imageName: "present")
     }
 }

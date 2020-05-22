@@ -16,8 +16,8 @@
 		48384A9A2477B0CE00F7AE13 /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384A992477B0CE00F7AE13 /* HeadView.swift */; };
 		48384A9D2477B28F00F7AE13 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384A9C2477B28F00F7AE13 /* ViewModifier.swift */; };
 		48384A9F2477C4F800F7AE13 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384A9E2477C4F800F7AE13 /* LayoutView.swift */; };
-		48384AA22477C59B00F7AE13 /* SubHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384AA12477C59B00F7AE13 /* SubHeadView.swift */; };
-		48384AA42477E67800F7AE13 /* SubHeadView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384AA32477E67800F7AE13 /* SubHeadView1.swift */; };
+		48384AA22477C59B00F7AE13 /* SubCardHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384AA12477C59B00F7AE13 /* SubCardHeadView.swift */; };
+		48384AA42477E67800F7AE13 /* SubCardHeadView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384AA32477E67800F7AE13 /* SubCardHeadView1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		48384A992477B0CE00F7AE13 /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 		48384A9C2477B28F00F7AE13 /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 		48384A9E2477C4F800F7AE13 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
-		48384AA12477C59B00F7AE13 /* SubHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeadView.swift; sourceTree = "<group>"; };
-		48384AA32477E67800F7AE13 /* SubHeadView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeadView1.swift; sourceTree = "<group>"; };
+		48384AA12477C59B00F7AE13 /* SubCardHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCardHeadView.swift; sourceTree = "<group>"; };
+		48384AA32477E67800F7AE13 /* SubCardHeadView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCardHeadView1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +116,8 @@
 		48384AA02477C56A00F7AE13 /* SubContentHead */ = {
 			isa = PBXGroup;
 			children = (
-				48384AA12477C59B00F7AE13 /* SubHeadView.swift */,
-				48384AA32477E67800F7AE13 /* SubHeadView1.swift */,
+				48384AA12477C59B00F7AE13 /* SubCardHeadView.swift */,
+				48384AA32477E67800F7AE13 /* SubCardHeadView1.swift */,
 			);
 			path = SubContentHead;
 			sourceTree = "<group>";
@@ -196,9 +196,9 @@
 				48384A842477872A00F7AE13 /* AppDelegate.swift in Sources */,
 				48384A862477872A00F7AE13 /* SceneDelegate.swift in Sources */,
 				48384A9F2477C4F800F7AE13 /* LayoutView.swift in Sources */,
-				48384AA22477C59B00F7AE13 /* SubHeadView.swift in Sources */,
+				48384AA22477C59B00F7AE13 /* SubCardHeadView.swift in Sources */,
 				48384A9A2477B0CE00F7AE13 /* HeadView.swift in Sources */,
-				48384AA42477E67800F7AE13 /* SubHeadView1.swift in Sources */,
+				48384AA42477E67800F7AE13 /* SubCardHeadView1.swift in Sources */,
 				48384A9D2477B28F00F7AE13 /* ViewModifier.swift in Sources */,
 				48384A882477872A00F7AE13 /* ContentView.swift in Sources */,
 			);

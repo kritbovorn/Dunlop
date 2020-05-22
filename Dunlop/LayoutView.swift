@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct LayoutView: View {
+    
+   @State private var isHiddenA = true
+    
     var body: some View {
         
         
@@ -21,21 +24,52 @@ struct LayoutView: View {
                 
                 VStack(spacing: 0) {
                     
+            // FIXME: - First
                     GeometryReader { firstGeo in
                         
                         // เนื้อหา แรก
-                        SubCardHeadView(contentResize: 1)
+                        //SubCardHeadView(contentResize: 1)
+                        SubCardHeadView1(isHiddenA: self.$isHiddenA, contentResize: self.isHiddenA ? 0.3 : 1, imageName: "present")
                         
                         
                     }
-                    .frame(height: mainGeo.size.height * 0.3)
-                    .background(Color(red: 249/255, green: 249/255, blue: 88/255))
+                    .frame(height: self.isHiddenA ? mainGeo.size.height * 0.1 : mainGeo.size.height * 0.3)
                     
+                    
+            // FIXME: - Second
                     GeometryReader { secondGeo in
                         
-                        EmptyView()
+                        VStack(spacing: 0) {
+                            
+                            // FIXME: - Second ONE
+                            GeometryReader { secondAGeo in
+                                
+                                Rectangle()
+                                
+                            }
+                            .frame(height: secondGeo.size.height * 0.8)
+                            
+                            
+                            // FIXME: - Second TWO
+                            GeometryReader { secondBGeo in
+                                
+                                Button(action: {
+                                    
+                                    withAnimation {
+                                        
+                                        self.isHiddenA.toggle()
+                                    }
+                                    
+                                }, label: {
+                                    
+                                    Text(":Boie:")
+                                })
+                                
+                            }
+                            .frame(height: secondGeo.size.height * 0.2)
+                        }
                     }
-                    .frame(height: mainGeo.size.height * 0.7)
+                    .frame(height: self.isHiddenA ? mainGeo.size.height * 0.7 : mainGeo.size.height * 0.1)
                 }
             }
             
