@@ -28,12 +28,13 @@ struct LayoutView: View {
                     GeometryReader { firstGeo in
                         
                         // เนื้อหา แรก
-                        //SubCardHeadView(contentResize: 1)
-                        SubCardHeadView1(isHiddenA: self.$isHiddenA, contentResize: self.isHiddenA ? 0.3 : 1, imageName: "present")
+                        
+                        SubCardHeadView1( isHiddenA: self.$isHiddenA, contentResize: self.isHiddenA ?  0 :  0.9, imageName: "present")
                         
                         
                     }
-                    .frame(height: self.isHiddenA ? mainGeo.size.height * 0.1 : mainGeo.size.height * 0.3)
+                    .frame(height: self.isHiddenA ? mainGeo.size.height * 0 : mainGeo.size.height * 0.3)
+                        
                     
                     
             // FIXME: - Second
@@ -44,7 +45,9 @@ struct LayoutView: View {
                             // FIXME: - Second ONE
                             GeometryReader { secondAGeo in
                                 
-                                Rectangle()
+                                RoundedRectangle(cornerRadius: secondGeo.size.width / 16)
+                                .fill(Color(red: 249/255, green: 249/255, blue: 88/255))
+                                    .modifier(LightLayoutShapeWidthHeightNeumorphicViewModifier(resize: 0.95))
                                 
                             }
                             .frame(height: secondGeo.size.height * 0.8)
@@ -69,7 +72,8 @@ struct LayoutView: View {
                             .frame(height: secondGeo.size.height * 0.2)
                         }
                     }
-                    .frame(height: self.isHiddenA ? mainGeo.size.height * 0.7 : mainGeo.size.height * 0.1)
+                    .frame(height: self.isHiddenA ? mainGeo.size.height * 1 : mainGeo.size.height * 0.7)
+                        //.frame(height: mainGeo.size.height * 0.7)
                 }
             }
             

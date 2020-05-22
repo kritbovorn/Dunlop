@@ -27,7 +27,7 @@ struct SubCardHeadView1: View {
                     Rectangle()
                         .fill(Color(red: 249/255, green: 249/255, blue: 88/255))
                         .cornerRadius(mainGeo.size.width / 18)
-                        .modifier(LightLayoutInverseShapeWidthHeightNeumorphicViewModifier(resize: 0.95))
+                        .modifier(LightLayoutInverseShapeWidthHeightNeumorphicViewModifier(resize: self.isHiddenA ? 0 : 0.95))
                     
                     VStack(spacing: 0) {
                         
@@ -38,7 +38,7 @@ struct SubCardHeadView1: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: image.size.width * 0.95, height: image.size.height * 0.8)
                         }
-                        .frame(height: self.isHiddenA ? geo.size.height * 1 : geo.size.height * 0.88)
+                        .frame(height: geo.size.height * 0.88)
                         
                         GeometryReader { pageControl in
                             
@@ -52,7 +52,7 @@ struct SubCardHeadView1: View {
                                 EmptyView()
                             }
                         }
-                        .frame(height: self.isHiddenA ? 0 : geo.size.height * 0.12)
+                        .frame(height: geo.size.height * 0.12)
                         //.background(Color.gray)
                         
                         Spacer()
@@ -71,6 +71,6 @@ struct SubCardHeadView1: View {
 
 struct SubHeadView1_Previews: PreviewProvider {
     static var previews: some View {
-        SubCardHeadView1(isHiddenA: .constant(true), contentResize: 0.3, imageName: "present")
+        SubCardHeadView1( isHiddenA: .constant(false), contentResize: 0.3, imageName: "present")
     }
 }
