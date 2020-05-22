@@ -10,8 +10,51 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+            
+            
+            GeometryReader { mainGeo in
+            
+                ZStack {
+                    
+                    
+                    Color.yellow
+                        .edgesIgnoringSafeArea(.all)
+                    
+                    VStack(spacing: 0) {
+                        
+                        GeometryReader { firstGeo in
+                            
+                            Image("present")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            
+                        }
+                        .frame(height: mainGeo.size.height * 0.3)
+                        
+                        
+                        GeometryReader { secondGeo in
+                            
+                            EmptyView()
+                        }
+                        .frame(height: mainGeo.size.height * 0.7)
+                        .background(Color.yellow)
+                        
+                        
+                    }
+                    
+                    
+                }
+            
+                
+                    
+            }
+        
+        
+        
     }
+        
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
