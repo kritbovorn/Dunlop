@@ -50,30 +50,31 @@ struct LayoutView: View {
                                     .modifier(LightLayoutShapeWidthHeightNeumorphicViewModifier(resize: 0.95))
                                 
                             }
-                            .frame(height: secondGeo.size.height * 0.8)
+                            .frame(height: secondGeo.size.height * 1)
                             
                             
-                            // FIXME: - Second TWO
-                            GeometryReader { secondBGeo in
-                                
-                                Button(action: {
-                                    
-                                    withAnimation {
-                                        
-                                        self.isHiddenA.toggle()
-                                    }
-                                    
-                                }, label: {
-                                    
-                                    Text(":Boie:")
-                                })
-                                
-                            }
-                            .frame(height: secondGeo.size.height * 0.2)
+                            
                         }
                     }
-                    .frame(height: self.isHiddenA ? mainGeo.size.height * 1 : mainGeo.size.height * 0.7)
-                        //.frame(height: mainGeo.size.height * 0.7)
+                    .frame(height: self.isHiddenA ? mainGeo.size.height * 0.92 : mainGeo.size.height * 0.62)
+                    
+                    GeometryReader { thirdGeo in
+                        
+                        Button(action: {
+                            
+                            withAnimation {
+                                
+                                self.isHiddenA.toggle()
+                            }
+                            
+                        }, label: {
+                            
+                            Text(":Boie:")
+                        })
+                    }
+                    .frame(height: mainGeo.size.height * 0.08)
+                    .background(Color.green)
+                        
                 }
             }
             
