@@ -10,7 +10,6 @@ import SwiftUI
 
 struct SubCardHeadView1: View {
     
-    @Binding var isHiddenA: Bool
     
     var contentResize: CGFloat
     var imageName: String
@@ -27,7 +26,7 @@ struct SubCardHeadView1: View {
                     Rectangle()
                         .fill(Color(red: 249/255, green: 249/255, blue: 88/255))
                         .cornerRadius(mainGeo.size.width / 18)
-                        .modifier(LightLayoutInverseShapeWidthHeightNeumorphicViewModifier(resize: self.isHiddenA ? 0 : 0.95))
+                        .modifier(LightLayoutShapeWidthHeightNeumorphicViewModifier(resize: self.contentResize))
                     
                     VStack(spacing: 0) {
                         
@@ -42,18 +41,11 @@ struct SubCardHeadView1: View {
                         
                         GeometryReader { pageControl in
                             
-                            VStack(spacing: 0) {
-                                
-                                Text(self.isHiddenA ? "" : "Boie")
+                            Text("Boie")
 
-
-                                Spacer()
-                                
-                                EmptyView()
-                            }
+                            
                         }
                         .frame(height: geo.size.height * 0.12)
-                        //.background(Color.gray)
                         
                         Spacer()
                         
@@ -61,7 +53,7 @@ struct SubCardHeadView1: View {
                 }
             }
             .frame(height: mainGeo.size.height * self.contentResize)
-            
+        
         }
         
         
@@ -71,6 +63,6 @@ struct SubCardHeadView1: View {
 
 struct SubHeadView1_Previews: PreviewProvider {
     static var previews: some View {
-        SubCardHeadView1( isHiddenA: .constant(false), contentResize: 0.3, imageName: "present")
+        SubCardHeadView1(contentResize: 0.3, imageName: "present")
     }
 }

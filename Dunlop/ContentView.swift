@@ -25,9 +25,7 @@ struct ContentView: View {
                         
                         GeometryReader { firstGeo in
                             
-                            Image("present")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            SubCardHeadView1(contentResize: 1, imageName: "history")
                             
                         }
                         .frame(height: mainGeo.size.height * 0.3)
