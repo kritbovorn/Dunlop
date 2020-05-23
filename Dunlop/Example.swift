@@ -15,106 +15,25 @@ struct Example: View {
     
     var body: some View {
         
-        GeometryReader { mainGeo in
+        
+        ZStack {
             
-            VStack(spacing: 0) {
+            Color(red: 249/255, green: 249/255, blue: 88/255)
+                .edgesIgnoringSafeArea(.all)
+            
+            GeometryReader { mainGeo in
                 
-                GeometryReader { firstGeo in
+                if self.isShow {
                     
-                    HStack {
-                        
-                        
-                        GeometryReader { aFirstGeo in
-                            
-                            Image( "present")
-                            .resizable()
-                            .scaledToFit()
-                        }
-                        .frame(width: self.isHide ? firstGeo.size.width * 0.33 : 0)
-                        
-                        
-                        GeometryReader { aFirstGeo in
-                            
-                            Image( "present")
-                            .resizable()
-                            .scaledToFit()
-                        }
-                        .frame(width: self.isHide ? firstGeo.size.width * 0.33 : firstGeo.size.width )
-                        
-                        
-                        GeometryReader { aFirstGeo in
-                            
-                            Image( "present")
-                            .resizable()
-                            .scaledToFit()
-                        }
-                        .frame(width: self.isHide ? firstGeo.size.width * 0.33 : 0)
-                        
-                    }
-                    
-                    
+                    Content1View(isShow: self.$isShow)
                 }
-                .frame(height: self.isHide ?  mainGeo.size.height * 0.1 :  mainGeo.size.height * 0.3)
-                .background(Color.blue)
-                
-                GeometryReader { secondGeo in
+                else{
                     
-                    
-                    Text("Third")
-                    
+                    Content2View(isShow: self.$isShow)
                 }
-                .frame(height: self.isHide ? mainGeo.size.height * 0.1 : mainGeo.size.height * 0.3)
-                .background(Color.green)
-                
-                // MAIN
-                GeometryReader { realGeo in
-                                   
-                    Text(self.isHide ? "Real" : "")
-                               }
-                               .frame(height: self.isHide ?  mainGeo.size.height * 0.65 :  mainGeo.size.height * 0)
-                               .background(Color.orange)
-                
-                GeometryReader { thirdGeo in
-                    
-                    Picker(selection: self.$isHide, label: Text("Boie")) {
-                        Text("Girl")
-                        Text("Children")
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    
-                    
-                    
-                }
-                .frame(height: self.isHide ? mainGeo.size.height * 0.05 : mainGeo.size.height * 0.3)
-                .background(Color.red)
-                
-               
-               
-                
-                GeometryReader { fifthGeo in
-                    
-                    
-                    Button(action: {
-                        
-                        withAnimation {
-                            self.isHide.toggle()
-                        }
-                    }, label: {
-                        Text("Button")
-                    })
-                }
-                .frame(height: mainGeo.size.height * 0.1)
-                .background(Color.yellow)
             }
         }
         
-//        func proved() {
-//
-//            if isHide && isShow {
-//
-//
-//            }
-//        }
     }
 }
 
