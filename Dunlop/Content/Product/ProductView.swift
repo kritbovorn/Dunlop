@@ -37,8 +37,10 @@ struct ProductView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
+                                
+                            
                             Text(self.title)
-                                .font(.system(size: 18, weight: .black))
+                                .font(.system(size: 16, weight: .bold))
                                 .foregroundColor(.primary)
                             
                             
