@@ -13,40 +13,7 @@ struct ContentView: View {
         
             
             
-            GeometryReader { mainGeo in
-            
-                ZStack {
-                    
-                    
-                    Color.yellow
-                        .edgesIgnoringSafeArea(.all)
-                    
-                    VStack(spacing: 0) {
-                        
-                        GeometryReader { firstGeo in
-                            
-                            SubCardHeadView1(contentResize: 1, imageName: "history")
-                            
-                        }
-                        .frame(height: mainGeo.size.height * 0.3)
-                        
-                        
-                        GeometryReader { secondGeo in
-                            
-                            EmptyView()
-                        }
-                        .frame(height: mainGeo.size.height * 0.7)
-                        .background(Color.yellow)
-                        
-                        
-                    }
-                    
-                    
-                }
-            
-                
-                    
-            }
+            EmptyView()
         
         
         

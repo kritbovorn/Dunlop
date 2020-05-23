@@ -14,7 +14,9 @@
 		48384A8D2477872F00F7AE13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48384A8C2477872F00F7AE13 /* Preview Assets.xcassets */; };
 		48384A902477872F00F7AE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48384A8E2477872F00F7AE13 /* LaunchScreen.storyboard */; };
 		48384A9D2477B28F00F7AE13 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384A9C2477B28F00F7AE13 /* ViewModifier.swift */; };
-		48384AA42477E67800F7AE13 /* SubCardHeadView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48384AA32477E67800F7AE13 /* SubCardHeadView1.swift */; };
+		48644093247951C500AFB937 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48644092247951C500AFB937 /* ProductRowView.swift */; };
+		48A37785247946BC008F913B /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A37784247946BC008F913B /* ProductView.swift */; };
+		48A3778824794972008F913B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3778724794972008F913B /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		48384A8F2477872F00F7AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48384A912477872F00F7AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48384A9C2477B28F00F7AE13 /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
-		48384AA32477E67800F7AE13 /* SubCardHeadView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCardHeadView1.swift; sourceTree = "<group>"; };
+		48644092247951C500AFB937 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
+		48A37784247946BC008F913B /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		48A3778724794972008F913B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		48384A822477872A00F7AE13 /* Dunlop */ = {
 			isa = PBXGroup;
 			children = (
+				48A3778624794960008F913B /* Enum */,
 				48384A9B2477B27C00F7AE13 /* ViewModifier */,
 				48384A832477872A00F7AE13 /* AppDelegate.swift */,
 				48384A852477872A00F7AE13 /* SceneDelegate.swift */,
@@ -84,7 +89,7 @@
 		48384A972477B09300F7AE13 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				48384AA32477E67800F7AE13 /* SubCardHeadView1.swift */,
+				48A3778924794A0D008F913B /* Product */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -95,6 +100,23 @@
 				48384A9C2477B28F00F7AE13 /* ViewModifier.swift */,
 			);
 			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		48A3778624794960008F913B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				48A3778724794972008F913B /* TabView.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		48A3778924794A0D008F913B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				48A37784247946BC008F913B /* ProductView.swift */,
+				48644092247951C500AFB937 /* ProductRowView.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +192,10 @@
 			files = (
 				48384A842477872A00F7AE13 /* AppDelegate.swift in Sources */,
 				48384A862477872A00F7AE13 /* SceneDelegate.swift in Sources */,
-				48384AA42477E67800F7AE13 /* SubCardHeadView1.swift in Sources */,
 				48384A9D2477B28F00F7AE13 /* ViewModifier.swift in Sources */,
+				48644093247951C500AFB937 /* ProductRowView.swift in Sources */,
+				48A3778824794972008F913B /* TabView.swift in Sources */,
+				48A37785247946BC008F913B /* ProductView.swift in Sources */,
 				48384A882477872A00F7AE13 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
