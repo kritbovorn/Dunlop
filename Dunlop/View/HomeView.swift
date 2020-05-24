@@ -87,7 +87,7 @@ struct HomeView: View {
                                 }
                                 
                             }
-                            .frame(height: mainGeo.size.height * 0.4)
+                            .frame(height: mainGeo.size.height * 0.5)
                             
                             
             // FIXME: - Category Text 2
@@ -119,7 +119,7 @@ struct HomeView: View {
                                 }
                                 
                             }
-                            .frame(height: mainGeo.size.height * 0.4)
+                            .frame(height: mainGeo.size.height * 0.5)
                             
                             
                 // FIXME: - Category Text 3
@@ -150,7 +150,7 @@ struct HomeView: View {
                                 }
                                 
                             }
-                            .frame(height: mainGeo.size.height * 0.4)
+                            .frame(height: mainGeo.size.height * 0.5)
                             
                             
                 // FIXME: - Category Text 4
@@ -184,7 +184,7 @@ struct HomeView: View {
                                 }
                                 
                             }
-                            .frame(height: mainGeo.size.height * 0.4)
+                            .frame(height: mainGeo.size.height * 0.5)
                             
                             
                             
