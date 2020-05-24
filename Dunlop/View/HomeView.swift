@@ -9,12 +9,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var dragOffset = CGSize.zero
+    @State private var isHideTabBar = false
+    
+    @State var selectedTabBar = TabView.home
+    
     var body: some View {
         
         
         ZStack {
             
-            Color(red: 255/255, green: 222/255, blue: 0/255)
+//            Color(red: 255/255, green: 222/255, blue: 0/255)
+            Color(red: 255/255, green: 253/255, blue: 162/255)
                 .edgesIgnoringSafeArea(.all)
             
             // FIXME: - MAIN
@@ -140,6 +147,32 @@ struct HomeView: View {
 
                                     }
                                 }
+                        // ScrollView
+                        .gesture(
+                            DragGesture()
+                                .onChanged({ (value) in
+                                    
+                                    if value.translation.height < 10 {
+                                        
+                                    
+                                        
+                                        withAnimation {
+                                            self.isHideTabBar = true
+                                            
+                                        }
+                                        
+                                    }
+                                    if value.translation.height > 20 {
+                                        
+                                        withAnimation {
+                                            
+                                            self.isHideTabBar = false
+                                        }
+                                        
+                                        
+                                    }
+                                })
+                        )
                         
                     }
                     .frame(minHeight: mainGeo.size.height * 0.9)
@@ -147,9 +180,12 @@ struct HomeView: View {
                     
                     GeometryReader { secondGeo in
                         
-                        EmptyView()
+                        //EmptyView()
+                        TabBarRowView(selectedTabBar: self.$selectedTabBar, tabBarItems: [
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "person"), resizeContent: 0.5)
+                        ], contentResize: 1)
                     }
-                    .frame(height: mainGeo.size.height * 0.1)
+                    .frame(height: self.isHideTabBar ? 0 : mainGeo.size.height * 0.1)
                     
                     
                 }   // Finish  Main VStack
