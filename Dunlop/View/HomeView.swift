@@ -102,7 +102,7 @@ struct HomeView: View {
                                         // TODO: - Category 2
                                         GeometryReader { firstGeo in
                                             
-                                            Category2View()
+                                            Category2View(fillColor: self.fillColor)
                                             
                                         }
                                         .frame(height: mainGeo.size.height * 0.5)
@@ -121,7 +121,7 @@ struct HomeView: View {
                                         // TODO: - Category 3
                                         GeometryReader { firstGeo in
                                             
-                                            Category3View()
+                                            Category3View(fillColor: self.fillColor)
                                             
                                         }
                                         .frame(height: mainGeo.size.height * 0.5)
@@ -141,7 +141,7 @@ struct HomeView: View {
                                         // TODO: - Category 4
                                         GeometryReader { firstGeo in
                                             
-                                            Category4View()
+                                            Category4View(fillColor: self.fillColor)
                                             
                                         }
                                         .frame(height: mainGeo.size.height * 0.5)
