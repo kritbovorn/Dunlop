@@ -61,8 +61,8 @@ struct ProductView: View {
                     .background(Color.lairBackgroundGray)
                     .cornerRadius(mainGeo.size.width / 6)
                     
-                    .shadow(color: Color.white.opacity(0.5), radius: mainGeo.size.width * 0.2, x: -mainGeo.size.width * 0.2, y: -mainGeo.size.width * 0.2)
-                    .shadow(color: Color.lairShadowGray.opacity(0.5), radius: mainGeo.size.width * 0.2, x: mainGeo.size.width * 0.2, y: mainGeo.size.width * 0.2)
+                    .shadow(color: Color.white.opacity(0.5), radius: mainGeo.size.width * 0.02, x: -mainGeo.size.width * 0.02, y: -mainGeo.size.width * 0.02)
+                    .shadow(color: Color.lairShadowGray.opacity(0.5), radius: mainGeo.size.width * 0.02, x: mainGeo.size.width * 0.02, y: mainGeo.size.width * 0.02)
             }
         }
     }
