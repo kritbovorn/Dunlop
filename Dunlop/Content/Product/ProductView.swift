@@ -41,7 +41,7 @@ struct ProductView: View {
                                 .shadow(color: Color.lairShadowGray, radius: geo.size.width * 0.01, x: geo.size.width * 0.01, y: geo.size.width * 0.01)
                             
                             Text(self.title)
-                                .font(.system(size: 12, weight: .bold))
+                                .font(.system(size: 16, weight: .bold))
                                 .foregroundColor(.lairDarkGray)
                                 
                                 .shadow(color: Color.white.opacity(0.3), radius: geo.size.width * 0.004, x: -geo.size.width * 0.004, y: -geo.size.width * 0.004)
@@ -61,8 +61,8 @@ struct ProductView: View {
                     .background(Color.lairBackgroundGray)
                     .cornerRadius(mainGeo.size.width / 6)
                     
-                    .shadow(color: Color.white.opacity(0.5), radius: mainGeo.size.width * 0.02, x: -mainGeo.size.width * 0.02, y: -mainGeo.size.width * 0.02)
-                    .shadow(color: Color.lairShadowGray.opacity(0.5), radius: mainGeo.size.width * 0.02, x: mainGeo.size.width * 0.02, y: mainGeo.size.width * 0.02)
+                    .shadow(color: Color.white.opacity(0.5), radius: mainGeo.size.width * 0.01, x: -mainGeo.size.width * 0.01, y: -mainGeo.size.width * 0.01)
+                    .shadow(color: Color.lairShadowGray.opacity(0.5), radius: mainGeo.size.width * 0.01, x: mainGeo.size.width * 0.01, y: mainGeo.size.width * 0.01)
             }
         }
     }

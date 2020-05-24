@@ -61,7 +61,7 @@ struct HomeView: View {
                             GeometryReader { categoryOne in
                                 
                                 
-                                CategoryTextView(title: "Passenger Car", contentsize: 1, fontSize: 18)
+                                CategoryTextView(title: "Passenger Car", contentsize: 1, fontSize: 24)
                                     .padding(.leading, 24)
                                 
                                 
@@ -83,7 +83,7 @@ struct HomeView: View {
                     
                             GeometryReader { categoryOne in
                                 
-                                CategoryTextView(title: "Van/Pick up", contentsize: 1, fontSize: 18)
+                                CategoryTextView(title: "Van/Pick up", contentsize: 1, fontSize: 24)
                                 .padding(.leading, 24)
                                 
                             }
@@ -103,7 +103,7 @@ struct HomeView: View {
                             
                                     GeometryReader { categoryOne in
                                         
-                                       CategoryTextView(title: "4x4/SUV", contentsize: 1, fontSize: 18)
+                                       CategoryTextView(title: "4x4/SUV", contentsize: 1, fontSize: 24)
                                         .padding(.leading, 24)
                                         
                                     }
@@ -122,7 +122,7 @@ struct HomeView: View {
                             
                                     GeometryReader { categoryOne in
                                         
-                                        CategoryTextView(title: "OEM", contentsize: 1, fontSize: 18)
+                                        CategoryTextView(title: "OEM", contentsize: 1, fontSize: 24)
                                         .padding(.leading, 24)
                                         
                                     }

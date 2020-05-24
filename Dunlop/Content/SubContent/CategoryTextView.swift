@@ -27,12 +27,24 @@ struct CategoryTextView: View {
                         
                         Spacer()
                         
-                        Text(self.title)
-                            .font(.system(size: self.fontSize, weight: .bold))
-                        .foregroundColor(.lairDarkGray)
-                        
-                        .shadow(color: Color.white.opacity(0.3), radius: geo.size.width * 0.004, x: -geo.size.width * 0.004, y: -geo.size.width * 0.004)
-                        .shadow(color: Color.lairShadowGray, radius: geo.size.width * 0.004, x: geo.size.width * 0.004, y: geo.size.width * 0.004)
+                        HStack {
+                            
+                            
+                            Image("logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: geo.size.height * 0.6)
+                            
+                                .shadow(color: Color.white.opacity(0.9), radius: geo.size.width * 0.005, x: geo.size.width * 0.005, y: geo.size.width * 0.005)
+                                .shadow(color: Color.lairShadowGray, radius: geo.size.width * 0.005, x: -geo.size.width * 0.005, y: -geo.size.width * 0.005)
+                            
+                            Text(self.title)
+                                .font(.system(size: self.fontSize, weight: .bold))
+                            .foregroundColor(.lairDarkGray)
+                            
+                            .shadow(color: Color.white.opacity(0.3), radius: geo.size.width * 0.004, x: -geo.size.width * 0.004, y: -geo.size.width * 0.004)
+                            .shadow(color: Color.lairShadowGray, radius: geo.size.width * 0.004, x: geo.size.width * 0.004, y: geo.size.width * 0.004)
+                        }
                         
                         Spacer()
                         
