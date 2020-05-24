@@ -69,22 +69,11 @@ struct HomeView: View {
                             .frame(height: mainGeo.size.height * 0.1)
                             
                             
-                            // TODO: - Product 1
+                            // TODO: - Category 1
                             GeometryReader { firstGeo in
                                 
-                                VStack(alignment: .leading, spacing: 0) {
-                                    
-                                    
-                                    
-                                    ProductRowView(resizeContent: 0.9, items: [
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm705"), title: "SP SPORT LM 705"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm704"), title: "SP SPORT LM 704"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("Maxx050"), title: "SP SPORT MAXX 050+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300"), title: "ENASAVE EC 300"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300+"), title: "ENASAVE EC 300+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("touring"), title: "SP TOURING R1")
-                                    ])
-                                }
+                                Category1View()
+                                
                                 
                             }
                             .frame(height: mainGeo.size.height * 0.5)
@@ -101,22 +90,10 @@ struct HomeView: View {
                             .frame(height: mainGeo.size.height * 0.1)
                             
                             
-                            // TODO: - Product 2
+                            // TODO: - Category 2
                             GeometryReader { firstGeo in
                                 
-                                VStack(alignment: .leading, spacing: 0) {
-                                    
-                                    
-                                    
-                                    ProductRowView(resizeContent: 0.9, items: [
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm705"), title: "SP SPORT LM 705"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm704"), title: "SP SPORT LM 704"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("Maxx050"), title: "SP SPORT MAXX 050+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300"), title: "ENASAVE EC 300"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300+"), title: "ENASAVE EC 300+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("touring"), title: "SP TOURING R1")
-                                    ])
-                                }
+                                Category2View()
                                 
                             }
                             .frame(height: mainGeo.size.height * 0.5)
@@ -132,22 +109,10 @@ struct HomeView: View {
                                     }
                                     .frame(height: mainGeo.size.height * 0.1)
                             
-                            // TODO: - Product 3
+                            // TODO: - Category 3
                             GeometryReader { firstGeo in
                                 
-                                VStack(alignment: .leading, spacing: 0) {
-                                    
-                                    
-                                    
-                                    ProductRowView(resizeContent: 0.9, items: [
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm705"), title: "SP SPORT LM 705"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm704"), title: "SP SPORT LM 704"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("Maxx050"), title: "SP SPORT MAXX 050+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300"), title: "ENASAVE EC 300"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300+"), title: "ENASAVE EC 300+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("touring"), title: "SP TOURING R1")
-                                    ])
-                                }
+                                Category3View()
                                 
                             }
                             .frame(height: mainGeo.size.height * 0.5)
@@ -166,22 +131,10 @@ struct HomeView: View {
                             
                             
                             
-                            // TODO: - Product 4
+                            // TODO: - Category 4
                             GeometryReader { firstGeo in
                                 
-                                VStack(alignment: .leading, spacing: 0) {
-                                    
-                                    
-                                    
-                                    ProductRowView(resizeContent: 0.9, items: [
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm705"), title: "SP SPORT LM 705"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm704"), title: "SP SPORT LM 704"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("Maxx050"), title: "SP SPORT MAXX 050+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300"), title: "ENASAVE EC 300"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300+"), title: "ENASAVE EC 300+"),
-                                        ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("touring"), title: "SP TOURING R1")
-                                    ])
-                                }
+                                Category4View()
                                 
                             }
                             .frame(height: mainGeo.size.height * 0.5)
@@ -199,8 +152,6 @@ struct HomeView: View {
                         
                         
                     }
-                    
-                    
                     
                     
                     
