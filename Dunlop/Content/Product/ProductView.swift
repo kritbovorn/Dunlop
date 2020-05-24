@@ -37,11 +37,11 @@ struct ProductView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 
-                                .shadow(color: Color.white.opacity(0.7), radius: geo.size.width * 0.01, x: geo.size.width * 0.01, y: geo.size.width * 0.01)
-                                .shadow(color: Color.lairShadowGray, radius: geo.size.width * 0.01, x: -geo.size.width * 0.01, y: -geo.size.width * 0.01)
+                                .shadow(color: Color.white.opacity(0.7), radius: geo.size.width * 0.01, x: -geo.size.width * 0.01, y: -geo.size.width * 0.01)
+                                .shadow(color: Color.lairShadowGray, radius: geo.size.width * 0.01, x: geo.size.width * 0.01, y: geo.size.width * 0.01)
                             
                             Text(self.title)
-                                .font(.system(size: 16, weight: .bold))
+                                .font(.system(size: 12, weight: .bold))
                                 .foregroundColor(.lairDarkGray)
                                 
                                 .shadow(color: Color.white.opacity(0.3), radius: geo.size.width * 0.004, x: -geo.size.width * 0.004, y: -geo.size.width * 0.004)

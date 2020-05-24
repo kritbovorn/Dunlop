@@ -36,17 +36,53 @@ struct HomeView: View {
                     // FIXME: - SECOND
                     GeometryReader { firstGeo in
                         
-                        ProductRowView(resizeContent: 0.9, items: [
-                            ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm705"), title: "SP SPORT LM 705"),
-                            ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm704"), title: "SP SPORT LM 704"),
-                            ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("Maxx050"), title: "SP SPORT MAXX 050+"),
-                            ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300"), title: "ENASAVE EC 300"),
-                            ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300+"), title: "ENASAVE EC 300+"),
-                            ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("touring"), title: "SP TOURING R1")
-                        ])
+                        VStack(alignment: .leading, spacing: 0) {
+                            
+                            Text("Passenger Car")
+                                .font(.system(size: 14))
+                                .fontWeight(.bold)
+                                .padding(.leading, 20)
+                            
+                            ProductRowView(resizeContent: 0.9, items: [
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm705"), title: "SP SPORT LM 705"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm704"), title: "SP SPORT LM 704"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("Maxx050"), title: "SP SPORT MAXX 050+"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300"), title: "ENASAVE EC 300"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300+"), title: "ENASAVE EC 300+"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("touring"), title: "SP TOURING R1")
+                            ])
+                        }
                         
                     }
                     .frame(height: mainGeo.size.height * 0.4)
+                    
+                    
+                    // FIXME: - SECOND
+                    GeometryReader { firstGeo in
+                        
+                        VStack(alignment: .leading, spacing: 0) {
+                            
+                            Text("Van / Pick up")
+                                .font(.system(size: 14))
+                                .fontWeight(.bold)
+                                .padding(.leading, 20)
+                            
+                            ProductRowView(resizeContent: 0.9, items: [
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm705"), title: "SP SPORT LM 705"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("lm704"), title: "SP SPORT LM 704"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("Maxx050"), title: "SP SPORT MAXX 050+"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300"), title: "ENASAVE EC 300"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("ec300+"), title: "ENASAVE EC 300+"),
+                                ProductView(resizeContent: 1, fillColor: Color(red: 255/255, green: 212/255, blue: 0/255), imageName: Image("touring"), title: "SP TOURING R1")
+                            ])
+                        }
+                        
+                    }
+                    .frame(height: mainGeo.size.height * 0.4)
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -54,7 +90,7 @@ struct HomeView: View {
                         
                         EmptyView()
                     }
-                    .frame(height: mainGeo.size.height * 0.5)
+                    .frame(height: mainGeo.size.height * 0.1)
                     
                 }
                 
