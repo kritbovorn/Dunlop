@@ -24,16 +24,9 @@ struct HomeView: View {
                 VStack(spacing: 0) {
                     
                     GeometryReader { oneGeo in
-                        
-                        
-                        
-                        ZStack {
                                 
-                                Color(red: 255/255, green: 222/255, blue: 0/255)
-                                    .edgesIgnoringSafeArea(.all)
-                                
+                        // FIXME: - ScrollView
                                 ScrollView(.vertical, showsIndicators: true) {
-                                    
                                     
                                     VStack {
                                         
@@ -61,7 +54,6 @@ struct HomeView: View {
                                                 
                                                 Spacer()
                                                 
-                                                
                                             }
                                             
                                         }
@@ -71,10 +63,8 @@ struct HomeView: View {
                                         
                                         GeometryReader { categoryOne in
                                             
-                                            
                                             CategoryTextView(title: "Passenger Car", contentsize: 1, fontSize: 24)
                                                 .padding(.leading, 24)
-                                            
                                             
                                         }
                                         .frame(height: mainGeo.size.height * 0.1)
@@ -147,18 +137,9 @@ struct HomeView: View {
                                             
                                         }
                                         .frame(height: mainGeo.size.height * 0.5)
-                                        
-                                        
-                                        GeometryReader { secondGeo in
-                                            
-                                            EmptyView()
-                                        }
-                                        .frame(height: mainGeo.size.height * 0.1)
-                                        
+
                                     }
-                                    
                                 }
-                            }
                         
                     }
                     .frame(minHeight: mainGeo.size.height * 0.9)
@@ -169,16 +150,15 @@ struct HomeView: View {
                         EmptyView()
                     }
                     .frame(height: mainGeo.size.height * 0.1)
-                    .background(Color(red: 255/255, green: 222/255, blue: 0/255))
                     
                     
-                }
+                }   // Finish  Main VStack
                 
                 
             }   // Finish Geometry
         }
         
-        // Finish  ZStack
+        // MARK: -  Finish  ZStack
         
         
     }
