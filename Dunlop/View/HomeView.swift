@@ -15,13 +15,14 @@ struct HomeView: View {
     
     @State var selectedTabBar = TabView.home
     
+    @State private var fillColor = Color(red: 255/255, green: 212/255, blue: 0/255)
+    
     var body: some View {
         
         
         ZStack {
             
-//            Color(red: 255/255, green: 222/255, blue: 0/255)
-            Color(red: 255/255, green: 253/255, blue: 162/255)
+            Color(red: 255/255, green: 222/255, blue: 0/255)
                 .edgesIgnoringSafeArea(.all)
             
             // FIXME: - MAIN
@@ -80,7 +81,7 @@ struct HomeView: View {
                                         // TODO: - Category 1
                                         GeometryReader { firstGeo in
                                             
-                                            Category1View()
+                                            Category1View(fillColor: self.fillColor)
                                             
                                             
                                         }
