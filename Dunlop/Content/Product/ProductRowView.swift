@@ -29,10 +29,13 @@ struct ProductRowView: View {
                             ForEach(self.items, id: \.uuid) { item in
                                 
                                 item
-                                .frame(width: mainGeo.size.width * 0.6)
+                                    .frame(width: mainGeo.size.width * 0.55, height: mainGeo.size.height * 0.9)
                                     .padding(.horizontal, 20)
                             }
                         }
+                        
+                        .padding(.vertical, mainGeo.size.height * 0.05)
+                        
                         
                     }
                     
