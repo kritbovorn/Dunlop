@@ -32,6 +32,30 @@ struct ShowNavigationBarView: View {
                     
                 VStack(spacing: 0) {
                     
+                    GeometryReader { geo in
+                            
+                        VStack(spacing: 0) {
+                            
+                            Spacer()
+                            
+                            HStack {
+                                
+                                Spacer()
+                                
+                                Image("dunlop-logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: geo.size.width * 0.5)
+                                
+                                Spacer()
+                            }
+                            
+                            Spacer()
+                        }
+                        
+                    }
+                    .frame(height: mainGeo.size.height * 0.1)
+                    
                     GeometryReader { oneGeo in
                                 
                         // FIXME: - ScrollView
@@ -42,31 +66,7 @@ struct ShowNavigationBarView: View {
                                         // TODO: - First Geometry
                                         
                                         // FIXME: - FIRST  Image Logo
-                                        GeometryReader { geo in
-                                                
-                                            VStack(spacing: 0) {
-                                                
-                                                Spacer()
-                                                
-                                                HStack {
-                                                    
-                                                    Spacer()
-                                                    
-                                                    Image("dunlop-logo")
-                                                    .resizable()
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .frame(width: geo.size.width * 0.5)
-                                                    
-                                                    Spacer()
-                                                    
-                                                }
-                                                
-                                                Spacer()
-                                                
-                                            }
-                                            
-                                        }
-                                        .frame(height: mainGeo.size.height * 0.1)
+                                        
                                         
                                 // FIXME: - Category Text 1
                                         
@@ -83,7 +83,6 @@ struct ShowNavigationBarView: View {
                                         GeometryReader { firstGeo in
                                             
                                             Category1View(fillColor: self.fillColor)
-                                            
                                             
                                         }
                                         .frame(height: mainGeo.size.height * 0.5)
@@ -149,14 +148,12 @@ struct ShowNavigationBarView: View {
 
                                     }
                                 }
-                        // ScrollView
+                        // ScrollView Finish
                         .gesture(
                             DragGesture()
                                 .onChanged({ (value) in
                                     
                                     if value.translation.height < 10 {
-                                        
-                                    
                                         
                                         withAnimation {
                                             self.isHideTabBar = true
@@ -164,20 +161,18 @@ struct ShowNavigationBarView: View {
                                         }
                                         
                                     }
-                                    if value.translation.height > 20 {
+                                    if value.translation.height > 10 {
                                         
                                         withAnimation {
                                             
                                             self.isHideTabBar = false
                                         }
-                                        
-                                        
                                     }
                                 })
                         )
                         
                     }
-                    .frame(minHeight: mainGeo.size.height * 0.9)
+                    .frame(minHeight: mainGeo.size.height * 0.8)
 
                     
                     GeometryReader { secondGeo in
@@ -191,8 +186,6 @@ struct ShowNavigationBarView: View {
                     
                     
                 }   // Finish  Main VStack
-                
-                
             }   // Finish Geometry
         }
         
