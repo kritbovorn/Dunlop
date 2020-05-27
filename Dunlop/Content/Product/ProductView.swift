@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ProductView: View {
     
+    @State private var isRotate: Bool = false
+    
     let uuid = UUID()
     var resizeContent: CGFloat
     var fillColor: Color
@@ -39,6 +41,23 @@ struct ProductView: View {
                                 
                                 .shadow(color: Color.white.opacity(0.7), radius: geo.size.width * 0.01, x: -geo.size.width * 0.01, y: -geo.size.width * 0.01)
                                 .shadow(color: Color.lairShadowGray, radius: geo.size.width * 0.01, x: geo.size.width * 0.01, y: geo.size.width * 0.01)
+                                
+                                .scaleEffect(self.isRotate ? 1 : 1)
+                                .rotationEffect(Angle(degrees:self.isRotate ? 360 : 0.01))
+                                
+                                .rotation3DEffect(Angle(degrees: 0.01), axis: (x: 1, y: 0, z: 0))
+                                .animation(Animation.linear(duration: 3).repeatCount(1))
+                            
+                                
+                                .onTapGesture {
+                                    self.isRotate.toggle()
+                                }
+                                
+                                .onAppear {
+                                    self.isRotate.toggle()
+                                }
+                            
+                                
                             
                             Text(self.title)
                                 .font(.system(size: 16, weight: .bold))
