@@ -178,7 +178,13 @@ struct HomeView: View {
                         
                         //EmptyView()
                         TabBarRowView(selectedTabBar: self.$selectedTabBar, tabBarItems: [
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "person"), resizeContent: 0.5)
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "pencil.tip"), resizeContent: 0.4),
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .product, imageName: Image(systemName: "video.circle"), resizeContent: 0.4),
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .dealer, imageName: Image(systemName: "alarm"), resizeContent: 0.4),
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .promotion, imageName: Image(systemName: "gear"), resizeContent: 0.4),
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .contact, imageName: Image(systemName: "person.fill"), resizeContent: 0.4)
+                            
+                            
                         ], contentResize: 1)
                     }
                     .frame(height: self.isHideTabBar ? 0 : mainGeo.size.height * 0.1)
