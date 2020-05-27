@@ -29,6 +29,7 @@
 		48A37785247946BC008F913B /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A37784247946BC008F913B /* ProductView.swift */; };
 		48A3778824794972008F913B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A3778724794972008F913B /* TabView.swift */; };
 		48AD7411247EDF5100B4E330 /* ShowNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD7410247EDF5100B4E330 /* ShowNavigationBarView.swift */; };
+		48AD7415247EE91100B4E330 /* InverseMask+ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD7414247EE91100B4E330 /* InverseMask+ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		48A37784247946BC008F913B /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		48A3778724794972008F913B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		48AD7410247EDF5100B4E330 /* ShowNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNavigationBarView.swift; sourceTree = "<group>"; };
+		48AD7414247EE91100B4E330 /* InverseMask+ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InverseMask+ViewExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				486440B024798BBB00AFB937 /* UIColorExtension.swift */,
 				486440B124798BBB00AFB937 /* ColorExtension.swift */,
 				486440B224798BBB00AFB937 /* LinearGradientExtension.swift */,
+				48AD7414247EE91100B4E330 /* InverseMask+ViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				48644093247951C500AFB937 /* ProductRowView.swift in Sources */,
 				48A3778824794972008F913B /* TabView.swift in Sources */,
 				485F9609247A6D9E00676299 /* CategoryTextView.swift in Sources */,
+				48AD7415247EE91100B4E330 /* InverseMask+ViewExtension.swift in Sources */,
 				486440B324798BBB00AFB937 /* UIColorExtension.swift in Sources */,
 				486440A42479847D00AFB937 /* HomeView.swift in Sources */,
 				485F960E247A78B900676299 /* Category2View.swift in Sources */,
