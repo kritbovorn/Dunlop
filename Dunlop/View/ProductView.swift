@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ProductView: View {
     
     @State private var dragOffset = CGSize.zero
     @State private var isHideTabBar = false
@@ -178,11 +178,10 @@ struct HomeView: View {
                         
                         //EmptyView()
                         TabBarRowView(selectedTabBar: self.$selectedTabBar, tabBarItems: [
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "pencil.tip"), contentSize: 0.9),
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .product, imageName: Image(systemName: "video.circle"), contentSize: 0.9),
-//                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .dealer, imageName: Image(systemName: "alarm"), contentSize: 0.9),
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .promotion, imageName: Image(systemName: "gear"), contentSize: 0.9),
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .contact, imageName: Image(systemName: "person.fill"), contentSize: 0.9)
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "tray.full.fill"), contentSize: 0.85),
+                            
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .promotion, imageName: Image(systemName: "rectangle.split.3x3.fill"), contentSize: 0.85),
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .contact, imageName: Image(systemName: "person.fill"), contentSize: 0.85)
                             
                             
                         ], contentResize: 1)
@@ -202,6 +201,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ProductView()
     }
 }

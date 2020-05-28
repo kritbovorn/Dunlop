@@ -30,7 +30,7 @@ struct TabBarItemView: View {
     
     var buttonDown: some View {
         
-        EmptyView()
+        SelectedButtonView(contentSize: self.contentSize, image: self.imageName)
     }
     
     var body: some View {
