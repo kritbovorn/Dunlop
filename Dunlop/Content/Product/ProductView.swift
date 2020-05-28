@@ -46,7 +46,7 @@ struct ProductView: View {
                                 .rotationEffect(Angle(degrees:self.isRotate ? 360 : 0.01))
                                 
                                 .rotation3DEffect(Angle(degrees: 0.01), axis: (x: 1, y: 0, z: 0))
-                                .animation(Animation.linear(duration: 3).repeatCount(1))
+                                .animation(Animation.linear(duration: 5).repeatCount(1))
                             
                                 
                                 .onTapGesture {

@@ -24,7 +24,7 @@ struct UnSelectedButtonMaskView: View {
                     .frame(width: mainGeo.size.height * self.contentSize, height: mainGeo.size.height * self.contentSize)
                 
                 self.image
-                .resizable()
+                    .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: (mainGeo.size.height * self.contentSize) / 2, height: (mainGeo.size.height * self.contentSize) / 2)
             }

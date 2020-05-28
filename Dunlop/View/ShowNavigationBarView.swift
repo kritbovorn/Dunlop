@@ -179,7 +179,7 @@ struct ShowNavigationBarView: View {
                         
                         //EmptyView()
                         TabBarRowView(selectedTabBar: self.$selectedTabBar, tabBarItems: [
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "person"), resizeContent: 0.5)
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "person"), contentSize: 0.5)
                         ], contentResize: 1)
                     }
                     .frame(height: self.isHideTabBar ? 0 : mainGeo.size.height * 0.1)

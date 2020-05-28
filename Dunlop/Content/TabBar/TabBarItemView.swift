@@ -16,7 +16,7 @@ struct TabBarItemView: View {
     var tabView: TabView
     var imageName: Image
     
-    var resizeContent: CGFloat
+    var contentSize: CGFloat
     
     func isSelected() -> Bool {
         
@@ -25,7 +25,7 @@ struct TabBarItemView: View {
     
     var buttonUp: some View {
         
-        EmptyView()
+        UnSelectButtonView(contentSize: self.contentSize, image: imageName)
     }
     
     var buttonDown: some View {
@@ -54,13 +54,13 @@ struct TabBarItemView: View {
                     }
                 })
             }
-            .frame(height: mainGeo.size.height * self.resizeContent)
+            .frame(height: mainGeo.size.height * self.contentSize)
         }
     }
 }
 
 struct TabBarItemView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarItemView(selectedTabBar: .constant(TabView.home), tabView: .home, imageName: Image(systemName: "pencil.tip"), resizeContent: 0.3)
+        TabBarItemView(selectedTabBar: .constant(TabView.home), tabView: .home, imageName: Image(systemName: "pencil.tip"), contentSize: 0.3)
     }
 }

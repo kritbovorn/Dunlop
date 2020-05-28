@@ -48,10 +48,10 @@ struct TabBarRowView: View {
 struct TabBarRowView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarRowView(selectedTabBar: .constant(.home), tabBarItems: [
-            TabBarItemView(selectedTabBar: .constant(.home), tabView: .home, imageName: Image(systemName: "pencil.tip"), resizeContent: 0.5),
-            TabBarItemView(selectedTabBar: .constant(.home), tabView: .product, imageName: Image(systemName: "video.circle"), resizeContent: 0.5),
-            TabBarItemView(selectedTabBar: .constant(.home), tabView: .home, imageName: Image(systemName: "pencil.tip"), resizeContent: 0.5),
-            TabBarItemView(selectedTabBar: .constant(.home), tabView: .product, imageName: Image(systemName: "video.circle"), resizeContent: 0.5),
+            TabBarItemView(selectedTabBar: .constant(.home), tabView: .home, imageName: Image(systemName: "pencil.tip"), contentSize: 0.5),
+            TabBarItemView(selectedTabBar: .constant(.home), tabView: .product, imageName: Image(systemName: "video.circle"), contentSize: 0.5),
+            TabBarItemView(selectedTabBar: .constant(.home), tabView: .home, imageName: Image(systemName: "pencil.tip"), contentSize: 0.5),
+            TabBarItemView(selectedTabBar: .constant(.home), tabView: .product, imageName: Image(systemName: "video.circle"), contentSize: 0.5),
             
             
             
