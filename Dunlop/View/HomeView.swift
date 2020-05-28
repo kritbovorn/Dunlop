@@ -2,13 +2,14 @@
 //  HomeView.swift
 //  Dunlop
 //
-//  Created by Kritbovorn on 23/5/2563 BE.
+//  Created by Kritbovorn on 28/5/2563 BE.
 //  Copyright © 2563 Kritbovorn. All rights reserved.
 //
 
 import SwiftUI
 
-struct ProductView: View {
+struct HomeView: View {
+    
     
     @State private var dragOffset = CGSize.zero
     @State private var isHideTabBar = false
@@ -197,10 +198,12 @@ struct ProductView: View {
         
         
     }
+    
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView()
+        HomeView()
     }
 }

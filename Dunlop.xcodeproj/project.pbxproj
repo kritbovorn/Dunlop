@@ -22,7 +22,6 @@
 		485F9615247AA43600676299 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F9614247AA43600676299 /* TabBarItemView.swift */; };
 		485F9617247AA90800676299 /* TabBarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F9616247AA90800676299 /* TabBarRowView.swift */; };
 		48644093247951C500AFB937 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48644092247951C500AFB937 /* ProductRowView.swift */; };
-		486440A42479847D00AFB937 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486440A32479847D00AFB937 /* ProductView.swift */; };
 		486440B324798BBB00AFB937 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486440B024798BBB00AFB937 /* UIColorExtension.swift */; };
 		486440B424798BBB00AFB937 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486440B124798BBB00AFB937 /* ColorExtension.swift */; };
 		486440B524798BBB00AFB937 /* LinearGradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486440B224798BBB00AFB937 /* LinearGradientExtension.swift */; };
@@ -33,6 +32,7 @@
 		48AD7418247F8B0B00B4E330 /* UnSelectedButtonMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD7417247F8B0B00B4E330 /* UnSelectedButtonMaskView.swift */; };
 		48AD741A247F8E3900B4E330 /* UnSelectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD7419247F8E3900B4E330 /* UnSelectButtonView.swift */; };
 		48AD741C247F9C4B00B4E330 /* SelectedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD741B247F9C4B00B4E330 /* SelectedButtonView.swift */; };
+		48AF3FD2247FDCF7002CA1DD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF3FD1247FDCF7002CA1DD /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,6 @@
 		485F9614247AA43600676299 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		485F9616247AA90800676299 /* TabBarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRowView.swift; sourceTree = "<group>"; };
 		48644092247951C500AFB937 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
-		486440A32479847D00AFB937 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		486440B024798BBB00AFB937 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		486440B124798BBB00AFB937 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		486440B224798BBB00AFB937 /* LinearGradientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientExtension.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		48AD7417247F8B0B00B4E330 /* UnSelectedButtonMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnSelectedButtonMaskView.swift; sourceTree = "<group>"; };
 		48AD7419247F8E3900B4E330 /* UnSelectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnSelectButtonView.swift; sourceTree = "<group>"; };
 		48AD741B247F9C4B00B4E330 /* SelectedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedButtonView.swift; sourceTree = "<group>"; };
+		48AF3FD1247FDCF7002CA1DD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +171,8 @@
 		486440A22479846200AFB937 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				486440A32479847D00AFB937 /* ProductView.swift */,
 				48AD7410247EDF5100B4E330 /* ShowNavigationBarView.swift */,
+				48AF3FD1247FDCF7002CA1DD /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,7 +298,6 @@
 				485F9609247A6D9E00676299 /* CategoryTextView.swift in Sources */,
 				48AD7415247EE91100B4E330 /* InverseMask+ViewExtension.swift in Sources */,
 				486440B324798BBB00AFB937 /* UIColorExtension.swift in Sources */,
-				486440A42479847D00AFB937 /* ProductView.swift in Sources */,
 				485F960E247A78B900676299 /* Category2View.swift in Sources */,
 				485F9610247A793600676299 /* Category3View.swift in Sources */,
 				48A37785247946BC008F913B /* ProductView.swift in Sources */,
@@ -307,6 +306,7 @@
 				485F960C247A782400676299 /* Category1View.swift in Sources */,
 				48384A882477872A00F7AE13 /* ContentView.swift in Sources */,
 				486440B424798BBB00AFB937 /* ColorExtension.swift in Sources */,
+				48AF3FD2247FDCF7002CA1DD /* HomeView.swift in Sources */,
 				48AD741A247F8E3900B4E330 /* UnSelectButtonView.swift in Sources */,
 				486440B524798BBB00AFB937 /* LinearGradientExtension.swift in Sources */,
 			);
