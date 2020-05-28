@@ -10,11 +10,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var selectedTabBar = TabView.home
+    
     var body: some View {
         
             
+        GeometryReader { mainGeo in
             
-            EmptyView()
+            VStack(spacing: 0) {
+                
+                if self.selectedTabBar == .home {
+                    
+                    HomeView()
+                }
+                else if self.selectedTabBar == .product {
+                    
+                    ProductTyreView()
+                }
+                else {
+                    
+                    ContactView()
+                }
+                
+            }
+        }
         
         
         
