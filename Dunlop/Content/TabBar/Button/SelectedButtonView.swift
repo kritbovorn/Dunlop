@@ -56,6 +56,8 @@ struct SelectedButtonView: View {
                 Circle()
                     .stroke(LinearGradient.lairHorizontalDark, lineWidth: 4)
             )
+            .shadow(color: Color.lairShadowGray.opacity(0.7), radius: 1, x: 1, y: 1)
+            .shadow(color: Color.white.opacity(0.7), radius: 1, x: -1, y: -1)
         }
     }
 }

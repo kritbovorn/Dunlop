@@ -50,11 +50,43 @@ struct ContactView: View {
                         
                     }
                     .frame(height: mainGeo.size.height * 0.08)
-                    
+                    // Start Content
                     GeometryReader { oneGeo in
                                 
                         
-                        Text("Boie CONTACT")
+                        VStack(spacing: 0) {
+                            
+                            GeometryReader { firstContent in
+                                
+                                VStack(spacing: 0) {
+                                    
+                                    Image("logo-1")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .shadow(color: Color.lairShadowGray.opacity(0.9), radius: firstContent.size.width * 0.004, x: firstContent.size.width * 0.004, y: firstContent.size.width * 0.004)
+                                        .shadow(color: Color.lairShadowGray, radius: firstContent.size.width * 0.002, x: -firstContent.size.width * 0.003, y: -firstContent.size.width * 0.003)
+                                    
+                                    Text("บริษัท สิทธิชัยยางยนต์ จำกัด")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.lairDarkGray)
+                                        
+                                        .shadow(color: Color.white.opacity(0.9), radius: firstContent.size.width * 0.004, x: -firstContent.size.width * 0.004, y: -firstContent.size.width * 0.004)
+                                        .shadow(color: Color.lairShadowGray, radius: firstContent.size.width * 0.005, x: firstContent.size.width * 0.005, y: firstContent.size.width * 0.005)
+                                    
+                                    Spacer()
+                                }
+                            }
+                            .frame(height: oneGeo.size.height * 0.3)
+                            //.background(Color.gray)
+                            
+                            GeometryReader { secondContent in
+                                
+                                EmptyView()
+                            }
+                            .frame(height: oneGeo.size.height * 0.7)
+                            //.background(Color.green)
+                        }
                     }
                     .frame(minHeight: mainGeo.size.height * 0.82)
 

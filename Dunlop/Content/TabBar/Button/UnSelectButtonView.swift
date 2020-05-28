@@ -30,7 +30,7 @@ struct UnSelectButtonView: View {
                     .shadow(color: Color.lairShadowGray, radius: 3, x: 3, y: 3)
                     .shadow(color: Color.white, radius: 3, x: -3, y: -3)
                     
-                    .clipShape(RoundedRectangle(cornerRadius: (mainGeo.size.height * self.contentSize) / 4))
+                    .clipShape(RoundedRectangle(cornerRadius: (mainGeo.size.height * self.contentSize) / 2))
             }
             //.compositingGroup()
             .shadow(color: Color.white.opacity(0.7), radius: 2, x: -2, y: -2)
