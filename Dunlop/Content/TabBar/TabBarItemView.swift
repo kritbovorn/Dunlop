@@ -11,11 +11,27 @@ import SwiftUI
 struct TabBarItemView: View {
     
     @Binding var selectedTabBar: TabView
+    
     let uuid = UUID()
     var tabView: TabView
     var imageName: Image
     
     var resizeContent: CGFloat
+    
+    func isSelected() -> Bool {
+        
+        return selectedTabBar == tabView
+    }
+    
+    var buttonUp: some View {
+        
+        
+    }
+    
+    var buttonDown: some View {
+        
+        EmptyView()
+    }
     
     var body: some View {
         
@@ -28,11 +44,14 @@ struct TabBarItemView: View {
                     self.selectedTabBar = self.tabView
                 }, label: {
                     
-                    self.imageName
-                    .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .accentColor(self.selectedTabBar == self.tabView ? .blue : .gray)
-                        .frame(width: geo.size.height, height: geo.size.height)
+                    if self.isSelected() {
+                        
+                        self.buttonDown
+                    }
+                    else{
+                        
+                        self.buttonUp
+                    }
                 })
             }
             .frame(height: mainGeo.size.height * self.resizeContent)
