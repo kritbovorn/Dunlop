@@ -14,15 +14,16 @@ struct ProductTyreView: View {
     
     @State var selectedTabBar = TabView.product
     
-    @State private var fillColor = Color(red: 255/255, green: 212/255, blue: 0/255)
+    @State private var fillColor = Color(red: 255/255, green: 212/255, blue: 0/255).opacity(0.6)
     
     var body: some View {
         
         
         ZStack {
             
-            Color(red: 255/255, green: 222/255, blue: 0/255)
-                .edgesIgnoringSafeArea(.all)
+            Color(red: 255/255, green: 212/255, blue: 0/255)
+            .opacity(0.2)
+            .edgesIgnoringSafeArea(.all)
             
             // FIXME: - MAIN
             GeometryReader { mainGeo in

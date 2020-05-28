@@ -17,8 +17,9 @@ struct ContactView: View {
         
         ZStack {
             
-            Color(red: 255/255, green: 222/255, blue: 0/255)
-                .edgesIgnoringSafeArea(.all)
+            Color(red: 255/255, green: 212/255, blue: 0/255)
+            .opacity(0.2)
+            .edgesIgnoringSafeArea(.all)
             
             // FIXME: - MAIN
             GeometryReader { mainGeo in

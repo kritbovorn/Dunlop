@@ -21,6 +21,7 @@ struct ContentView: View {
             ZStack {
                 
                 Color(red: 255/255, green: 212/255, blue: 0/255)
+                    .opacity(0.6)
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack(spacing: 0) {

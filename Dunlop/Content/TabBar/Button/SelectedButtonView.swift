@@ -54,7 +54,7 @@ struct SelectedButtonView: View {
             }
             .overlay(
                 Circle()
-                    .stroke(LinearGradient.lairDiagonalLightBorder, lineWidth: 4)
+                    .stroke(LinearGradient.lairHorizontalDark, lineWidth: 4)
             )
         }
     }
