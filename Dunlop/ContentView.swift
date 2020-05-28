@@ -22,15 +22,15 @@ struct ContentView: View {
                 
                 if self.selectedTabBar == .home {
                     
-                    HomeView()
+                    HomeView(selectedTabBar: TabView.home)
                 }
                 else if self.selectedTabBar == .product {
                     
-                    ProductTyreView()
+                    ProductTyreView(selectedTabBar: TabView.product)
                 }
                 else {
                     
-                    ContactView()
+                    ContactView(selectedTabBar: TabView.contact)
                 }
                 
             }
