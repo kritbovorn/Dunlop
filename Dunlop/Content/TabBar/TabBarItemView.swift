@@ -25,7 +25,7 @@ struct TabBarItemView: View {
     
     var buttonUp: some View {
         
-        
+        EmptyView()
     }
     
     var buttonDown: some View {
