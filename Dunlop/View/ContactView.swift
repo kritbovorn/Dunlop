@@ -48,29 +48,17 @@ struct ContactView: View {
                         }
                         
                     }
-                    .frame(height: mainGeo.size.height * 0.1)
+                    .frame(height: mainGeo.size.height * 0.08)
                     
                     GeometryReader { oneGeo in
                                 
                         
-                        EmptyView()
+                        Text("Boie CONTACT")
                     }
-                    .frame(minHeight: mainGeo.size.height * 0.8)
+                    .frame(minHeight: mainGeo.size.height * 0.82)
 
                     
-                    GeometryReader { secondGeo in
-                        
-                        //EmptyView()
-                        TabBarRowView(selectedTabBar: self.$selectedTabBar, tabBarItems: [
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "tray.full.fill"), contentSize: 0.85),
-                            
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .promotion, imageName: Image(systemName: "rectangle.split.3x3.fill"), contentSize: 0.85),
-                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .contact, imageName: Image(systemName: "person.fill"), contentSize: 0.85)
-                            
-                            
-                        ], contentResize: 1)
-                    }
-                    .frame(height:mainGeo.size.height * 0.1)
+                    
                     
                     
                 }   // Finish  Main VStack

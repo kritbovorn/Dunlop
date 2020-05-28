@@ -18,21 +18,44 @@ struct ContentView: View {
             
         GeometryReader { mainGeo in
             
-            VStack(spacing: 0) {
+            ZStack {
                 
-                if self.selectedTabBar == .home {
-                    
-                    HomeView(selectedTabBar: TabView.home)
-                }
-                else if self.selectedTabBar == .product {
-                    
-                    ProductTyreView(selectedTabBar: TabView.product)
-                }
-                else {
-                    
-                    ContactView(selectedTabBar: TabView.contact)
-                }
+                Color(red: 255/255, green: 212/255, blue: 0/255)
+                    .edgesIgnoringSafeArea(.all)
                 
+                VStack(spacing: 0) {
+                    
+                    GeometryReader { firstGeo in
+                        
+                        if self.selectedTabBar == .home {
+                            
+                            HomeView(selectedTabBar: TabView.home)
+                        }
+                        else if self.selectedTabBar == .product {
+                            
+                            ProductTyreView(selectedTabBar: TabView.product)
+                        }
+                        else {
+                            
+                            ContactView(selectedTabBar: TabView.contact)
+                        }
+                    }
+                    .frame(height: mainGeo.size.height * 0.9)
+                    
+                    GeometryReader { secondGeo in
+                        
+                        TabBarRowView(selectedTabBar: self.$selectedTabBar, tabBarItems: [
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "tray.full.fill"), contentSize: 0.8),
+                            
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .product, imageName: Image(systemName: "rectangle.split.3x3.fill"), contentSize: 0.8),
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .contact, imageName: Image(systemName: "person.fill"), contentSize: 0.8)
+                            
+                            
+                        ], contentResize: 1)
+                    }
+                    .frame(height: mainGeo.size.height * 0.1)
+                    
+                }
             }
         }
         
