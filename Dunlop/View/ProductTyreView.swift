@@ -14,7 +14,8 @@ struct ProductTyreView: View {
     
     @State var selectedTabBar = TabView.product
     
-    @State private var fillColor = Color(red: 255/255, green: 212/255, blue: 0/255).opacity(0.6)
+//    @State private var fillColor = Color(red: 255/255, green: 212/255, blue: 0/255).opacity(0.6)
+    @State private var fillColor = Color.lairDarkGray
     
     var body: some View {
         
@@ -151,6 +152,11 @@ struct ProductTyreView: View {
                         
                     }
                     .frame(minHeight: mainGeo.size.height * 0.82)
+                    //.background(LinearGradient.lairHorizontalLight)
+                        .background(Color.lairWhite)
+
+                    
+                    // FIXME: - Background Color of Content
                     
                     
                     
