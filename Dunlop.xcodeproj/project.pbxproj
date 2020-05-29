@@ -30,6 +30,8 @@
 		48A37B50247FE28300C2D4CD /* ProductTyreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A37B4F247FE28300C2D4CD /* ProductTyreView.swift */; };
 		48A37B52247FE32F00C2D4CD /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A37B51247FE32F00C2D4CD /* ContactView.swift */; };
 		48A37B5524801E7400C2D4CD /* HomeSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A37B5424801E7400C2D4CD /* HomeSubView.swift */; };
+		48A37B582480B95800C2D4CD /* BlurEffectViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A37B572480B95800C2D4CD /* BlurEffectViewRepresentable.swift */; };
+		48A37B5A2480C32E00C2D4CD /* ContactTyreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A37B592480C32E00C2D4CD /* ContactTyreView.swift */; };
 		48AD7411247EDF5100B4E330 /* ShowNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD7410247EDF5100B4E330 /* ShowNavigationBarView.swift */; };
 		48AD7415247EE91100B4E330 /* InverseMask+ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD7414247EE91100B4E330 /* InverseMask+ViewExtension.swift */; };
 		48AD7418247F8B0B00B4E330 /* UnSelectedButtonMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD7417247F8B0B00B4E330 /* UnSelectedButtonMaskView.swift */; };
@@ -64,6 +66,8 @@
 		48A37B4F247FE28300C2D4CD /* ProductTyreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTyreView.swift; sourceTree = "<group>"; };
 		48A37B51247FE32F00C2D4CD /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		48A37B5424801E7400C2D4CD /* HomeSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSubView.swift; sourceTree = "<group>"; };
+		48A37B572480B95800C2D4CD /* BlurEffectViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectViewRepresentable.swift; sourceTree = "<group>"; };
+		48A37B592480C32E00C2D4CD /* ContactTyreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTyreView.swift; sourceTree = "<group>"; };
 		48AD7410247EDF5100B4E330 /* ShowNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNavigationBarView.swift; sourceTree = "<group>"; };
 		48AD7414247EE91100B4E330 /* InverseMask+ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InverseMask+ViewExtension.swift"; sourceTree = "<group>"; };
 		48AD7417247F8B0B00B4E330 /* UnSelectedButtonMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnSelectedButtonMaskView.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				48384A892477872F00F7AE13 /* Assets.xcassets */,
 				48384A8E2477872F00F7AE13 /* LaunchScreen.storyboard */,
 				48384A912477872F00F7AE13 /* Info.plist */,
+				48A37B572480B95800C2D4CD /* BlurEffectViewRepresentable.swift */,
 				48384A8B2477872F00F7AE13 /* Preview Content */,
 			);
 			path = Dunlop;
@@ -226,6 +231,7 @@
 		48A37B562480237400C2D4CD /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				48A37B592480C32E00C2D4CD /* ContactTyreView.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -326,9 +332,11 @@
 				486440B324798BBB00AFB937 /* UIColorExtension.swift in Sources */,
 				485F960E247A78B900676299 /* Category2View.swift in Sources */,
 				485F9610247A793600676299 /* Category3View.swift in Sources */,
+				48A37B582480B95800C2D4CD /* BlurEffectViewRepresentable.swift in Sources */,
 				48A37785247946BC008F913B /* ProductView.swift in Sources */,
 				48AD7418247F8B0B00B4E330 /* UnSelectedButtonMaskView.swift in Sources */,
 				48A37B50247FE28300C2D4CD /* ProductTyreView.swift in Sources */,
+				48A37B5A2480C32E00C2D4CD /* ContactTyreView.swift in Sources */,
 				485F9615247AA43600676299 /* TabBarItemView.swift in Sources */,
 				485F960C247A782400676299 /* Category1View.swift in Sources */,
 				48384A882477872A00F7AE13 /* ContentView.swift in Sources */,

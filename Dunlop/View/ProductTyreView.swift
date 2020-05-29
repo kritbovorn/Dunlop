@@ -152,9 +152,7 @@ struct ProductTyreView: View {
                         
                     }
                     .frame(minHeight: mainGeo.size.height * 0.82)
-                    //.background(LinearGradient.lairHorizontalLight)
-                        .background(Color.lairWhite)
-
+                    .background(Color.white)
                     
                     // FIXME: - Background Color of Content
                     
