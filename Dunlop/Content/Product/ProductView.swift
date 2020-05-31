@@ -63,7 +63,10 @@ struct ProductView: View {
                                 .font(.system(size: 16, weight: .bold))
                                 .foregroundColor(.lairDarkGray)
                                 .padding(.horizontal, 5)
-                                .background(Blur(style: .systemUltraThinMaterialLight))
+                                .padding(.vertical, 5)
+                                //.background(Blur(style: .systemUltraThinMaterialLight))
+                                .background(LinearGradient.lairDiagonalDarkBorder)
+                            .cornerRadius(8)
                                 
                                 
                                 .shadow(color: Color.white.opacity(0.9), radius: geo.size.width * 0.004, x: -geo.size.width * 0.004, y: -geo.size.width * 0.004)

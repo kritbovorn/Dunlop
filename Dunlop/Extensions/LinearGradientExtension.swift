@@ -31,7 +31,7 @@ import SwiftUI
 extension LinearGradient {
   public static var lairDiagonalDarkBorder: LinearGradient {
     LinearGradient(
-      gradient: Gradient(colors: [.white, .lairGray]),
+        gradient: Gradient(colors: [.lairGray, .white, .lairGray]),
       startPoint: UnitPoint(x: -0.2, y: 0.5),
       endPoint: .bottomTrailing
     )

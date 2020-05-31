@@ -11,7 +11,6 @@ import SwiftUI
 enum TabView {
     case home
     case product
-    case promotion
-    case dealer
+    case map
     case contact
 }

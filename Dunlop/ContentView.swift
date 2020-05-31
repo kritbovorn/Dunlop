@@ -36,6 +36,9 @@ struct ContentView: View {
                             
                             ProductTyreView(selectedTabBar: TabView.product)
                         }
+                        else if  self.selectedTabBar == TabView.map {
+                            MapView()
+                        }
                         else {
                             
                             ContactView(selectedTabBar: TabView.contact)
@@ -49,7 +52,12 @@ struct ContentView: View {
                             TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .home, imageName: Image(systemName: "tray.full.fill"), contentSize: 0.8),
                             
                             TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .product, imageName: Image(systemName: "rectangle.split.3x3.fill"), contentSize: 0.8),
+                            
+                            TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .map, imageName: Image(systemName: "map.fill"), contentSize: 0.8),
+                            
                             TabBarItemView(selectedTabBar: self.$selectedTabBar, tabView: .contact, imageName: Image(systemName: "person.fill"), contentSize: 0.8)
+                            
+                            
                             
                             
                         ], contentResize: 1)

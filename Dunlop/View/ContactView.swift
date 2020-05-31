@@ -78,14 +78,12 @@ struct ContactView: View {
                                 }
                             }
                             .frame(height: oneGeo.size.height * 0.2)
-                            //.background(Color.gray)
                             
                             GeometryReader { secondContent in
                                 
                                 ContactTyreView()
                             }
                             .frame(height: oneGeo.size.height * 0.8)
-                            //.background(Color.green)
                         }
                     }
                     .frame(minHeight: mainGeo.size.height * 0.82)
